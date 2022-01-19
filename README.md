@@ -3,7 +3,7 @@
 L293D Quadruple Half H-Bridge
 
 
-![This is an image](https://github.com/davidedifilippo//L293D_Motor_Driver/L293D_PWM_Start_Stop.jpg)
+![This is an image](https://github.com/davidedifilippo/L293D_Motor_Driver/L293D_PWM_Start_Stop.jpg)
 
 # Gestione del pulsante di start
 
