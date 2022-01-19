@@ -47,7 +47,7 @@ I due piedini devono essere impostati come OUTPUT nel setup.
 Questo perchè nel primo caso i transistor alto sinistro e basso destro sono attivi nel ponte H. Nel secondo caso invece sono attivi il transistor 
 in basso a sinistra e in alto a destra
 
-![This is an image](https://github.com/davidedifilippo//L293D_Motor_Driver/L293D_ponte_H.jpg)
+![This is an image](./PonteH.png)
 
 I due comandi devono pertanto essere sempre uno il complemento dell'altro. 
 
