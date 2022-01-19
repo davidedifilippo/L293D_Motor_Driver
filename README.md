@@ -5,7 +5,7 @@ L293D Quadruple Half H-Bridge
 
 ![This is an image](./L293D_PWM_Start_Stop.jpg)
 
-# Gestione del pulsante di start/stop
+## Gestione del pulsante di start/stop
 
 Bisogna specificare all'inizio del programma su quale piedino colleghiamo il pulsante di start/stop che consente di avviare/bloccare la marcia
 
@@ -21,7 +21,7 @@ Al termine della fase di setup si inserisce la seguente chiamata:
     
 Ossia il motore passa da inattivo a pronto. Nella funzione richiamata si stampa la frase "motore pronto" sul monitor seriale. Poi si abilita il ponte A di alimentazione del motore A e poi si imposta il verso di marcia.
 
-# Abilitazione ponte H di controllo A
+## Abilitazione ponte H di controllo A
 
 L'abilitazione del ponte avviene tramite il piedino 11 del microcontrollore
 
@@ -39,7 +39,7 @@ Come si vede dallo schema elettrico:
       
 I due piedini devono essere impostati come OUTPUT nel setup.
  
-# Controllo del verso di marcia
+## Controllo del verso di marcia
 
 - controllo_ramo_1A -> HIGH  controllo_ramo_2A -> LOW   il motore ruota in senso orario
 - controllo_ramo_1A -> LOW   controllo_ramo_2A -> HIGH  il motore ruota in senso antiorario
@@ -57,7 +57,7 @@ I due comandi devono pertanto essere sempre uno il complemento dell'altro.
 Se i due comandi sono posti entrambi alti o bassi si ha la frenatura rapida del motore.
 
 
-# La funzione completa "motore pronto":
+## La funzione completa "motore pronto":
 
 
     void motore_pronto()
@@ -88,7 +88,7 @@ Se i due comandi sono posti entrambi alti o bassi si ha la frenatura rapida del 
 
  L'istruzione crea un loop infinito che può essere interrotto solo schiacciando il push button di start/stop, visto che normalmente sul piedino del pulsante ho valore LOW.
  
- # Fase di loop 
+ ## Fase di loop 
  
  Nella fase di loop si imposta la velocità del motore tramite il potenziometro che controlla la tensione sul piedino analogico A0:
  
@@ -116,7 +116,7 @@ Se i due comandi sono posti entrambi alti o bassi si ha la frenatura rapida del 
  Fine del loop...........Fine del programma
  
  
- # Codice di gestione dello stop (opzionale)
+ ## Codice di gestione dello stop (opzionale)
  
  All'inizio del loop inserisco il codice di gestione dell'arresto del motore:
  
