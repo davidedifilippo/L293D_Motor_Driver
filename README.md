@@ -5,7 +5,7 @@ L293D Quadruple Half H-Bridge
 
 ![This is an image](./L293D_PWM_Start_Stop.jpg)
 
-# Gestione del pulsante di start
+# Gestione del pulsante di start/stop
 
 Bisogna specificare all'inizio del programma su quale piedino colleghiamo il pulsante di start/stop che consente di avviare/bloccare la marcia
 
@@ -14,7 +14,6 @@ Bisogna specificare all'inizio del programma su quale piedino colleghiamo il pul
 Nella fase di setup dovremo pertanto impostare il piedino come ingresso:
 
     pinMode(start_Stop_Button, INPUT);
-
 
 Al termine della fase di setup si inserisce la seguente chiamata:
 
