@@ -123,7 +123,7 @@ Se i due comandi sono posti entrambi alti o bassi si ha la frenatura rapida del 
     if(digitalRead(start_Stop_Button) != LOW)
      { 
       delay(100);
-      digitalWrite(controllo_ramo_1A, HIGH); //senso orario
+      digitalWrite(controllo_ramo_1A, HIGH); //frenatura
       digitalWrite(controllo_ramo_2A, HIGH);
       Serial.println("Stop ");
       
